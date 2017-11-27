@@ -12,6 +12,14 @@
 		182A0CFB1FC8BE890024331E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182A0CF91FC8BE890024331E /* Main.storyboard */; };
 		182A0CFD1FC8BE890024331E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182A0CFC1FC8BE890024331E /* Assets.xcassets */; };
 		182A0D001FC8BE890024331E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182A0CFE1FC8BE890024331E /* LaunchScreen.storyboard */; };
+		18A795591FCCC03600C077B9 /* CreateBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A795581FCCC03500C077B9 /* CreateBookViewController.swift */; };
+		18A7955B1FCCC27D00C077B9 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7955A1FCCC27D00C077B9 /* Firebase.swift */; };
+		18A7955D1FCCC2BA00C077B9 /* CreateBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7955C1FCCC2BA00C077B9 /* CreateBookController.swift */; };
+		18A7955F1FCCC40100C077B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18A7955E1FCCC40100C077B9 /* GoogleService-Info.plist */; };
+		18A795611FCCC4B900C077B9 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A795601FCCC4B900C077B9 /* Book.swift */; };
+		18A795631FCCC78B00C077B9 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A795621FCCC78B00C077B9 /* Goal.swift */; };
+		18A795651FCCCA9D00C077B9 /* GoalPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A795641FCCCA9D00C077B9 /* GoalPages.swift */; };
+		18A795671FCCCB5400C077B9 /* GoalBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A795661FCCCB5400C077B9 /* GoalBooks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		182A0CFC1FC8BE890024331E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182A0CFF1FC8BE890024331E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182A0D011FC8BE890024331E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A795581FCCC03500C077B9 /* CreateBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookViewController.swift; sourceTree = "<group>"; };
+		18A7955A1FCCC27D00C077B9 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		18A7955C1FCCC2BA00C077B9 /* CreateBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookController.swift; sourceTree = "<group>"; };
+		18A7955E1FCCC40100C077B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18A795601FCCC4B900C077B9 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		18A795621FCCC78B00C077B9 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		18A795641FCCCA9D00C077B9 /* GoalPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPages.swift; sourceTree = "<group>"; };
+		18A795661FCCCB5400C077B9 /* GoalBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalBooks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,47 @@
 		182A0CF41FC8BE890024331E /* Reading Diary */ = {
 			isa = PBXGroup;
 			children = (
+				182A0D0B1FC8C3DC0024331E /* view */,
+				182A0D091FC8C3B70024331E /* model */,
+				182A0D081FC8C3A40024331E /* controller */,
 				182A0CF51FC8BE890024331E /* AppDelegate.swift */,
-				182A0CF71FC8BE890024331E /* ViewController.swift */,
-				182A0CF91FC8BE890024331E /* Main.storyboard */,
 				182A0CFC1FC8BE890024331E /* Assets.xcassets */,
-				182A0CFE1FC8BE890024331E /* LaunchScreen.storyboard */,
 				182A0D011FC8BE890024331E /* Info.plist */,
+				18A7955E1FCCC40100C077B9 /* GoogleService-Info.plist */,
 			);
 			path = "Reading Diary";
+			sourceTree = "<group>";
+		};
+		182A0D081FC8C3A40024331E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A7955C1FCCC2BA00C077B9 /* CreateBookController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		182A0D091FC8C3B70024331E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18A7955A1FCCC27D00C077B9 /* Firebase.swift */,
+				18A795601FCCC4B900C077B9 /* Book.swift */,
+				18A795621FCCC78B00C077B9 /* Goal.swift */,
+				18A795641FCCCA9D00C077B9 /* GoalPages.swift */,
+				18A795661FCCCB5400C077B9 /* GoalBooks.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		182A0D0B1FC8C3DC0024331E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				182A0CFE1FC8BE890024331E /* LaunchScreen.storyboard */,
+				182A0CF91FC8BE890024331E /* Main.storyboard */,
+				182A0CF71FC8BE890024331E /* ViewController.swift */,
+				18A795581FCCC03500C077B9 /* CreateBookViewController.swift */,
+			);
+			name = view;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182A0D001FC8BE890024331E /* LaunchScreen.storyboard in Resources */,
+				18A7955F1FCCC40100C077B9 /* GoogleService-Info.plist in Resources */,
 				182A0CFD1FC8BE890024331E /* Assets.xcassets in Resources */,
 				182A0CFB1FC8BE890024331E /* Main.storyboard in Resources */,
 			);
@@ -136,8 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A795591FCCC03600C077B9 /* CreateBookViewController.swift in Sources */,
 				182A0CF81FC8BE890024331E /* ViewController.swift in Sources */,
+				18A795611FCCC4B900C077B9 /* Book.swift in Sources */,
+				18A7955D1FCCC2BA00C077B9 /* CreateBookController.swift in Sources */,
+				18A795671FCCCB5400C077B9 /* GoalBooks.swift in Sources */,
+				18A7955B1FCCC27D00C077B9 /* Firebase.swift in Sources */,
+				18A795651FCCCA9D00C077B9 /* GoalPages.swift in Sources */,
 				182A0CF61FC8BE890024331E /* AppDelegate.swift in Sources */,
+				18A795631FCCC78B00C077B9 /* Goal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reading Diary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.br.reading.diary.Reading-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.readingdiary.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Reading Diary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.br.reading.diary.Reading-Diary";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.readingdiary.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
